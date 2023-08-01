@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{char c;
+cin>>c;
+int x,y; cin>>x>>y;
+cout<<"please enter the value"<<endl;
+switch(c){
+case '+':
+cout<<x+y<<endl;
+break;
+case '-':
+cout<<x-y<<endl;
+break;
+case '*':
+cout<<x*y<<endl;
+break;
+case '/':
+cout<<x/y<<endl;
+break;
+case '%':
+cout<<x%y<<endl;
+break;
+default:
+cout<<"Invaild input"<<endl;
+break;}
+}

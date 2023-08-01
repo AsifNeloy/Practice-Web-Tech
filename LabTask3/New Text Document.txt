@@ -1,0 +1,19 @@
+process
+
+$Error_file = "";
+
+if(move_uploaded_file($_FILES["myfile"]["tmp_name"],"../upload/".$_FILES["myfile"]["name"])){
+        
+    }
+    else{
+        $Error_file= "File not uploaded. File should be JPG";
+        $hasError = 1;
+    }
+
+registration
+
+<tr><td>Upload picture : </td>
+        <td><input type="file"  name="myfile"></td></tr>
+        <?php
+            echo $Error_file;
+       ?>
